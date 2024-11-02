@@ -1,0 +1,221 @@
+/* Basic CSS for the navigation bar */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+    
+}
+
+body{
+    color: whitesmoke;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+}
+
+p{
+    font-weight: 400;
+    
+}
+
+.logo {
+    font-size: 35px;
+    color: #0E191E;
+    font-weight: 400;
+    font-family: 'Sirin Stencil', cursive;
+    font-style: italic;
+    /* padding: 10px; */
+    /* padding-left: 8%;  */
+      
+}
+
+.wrapper{
+    max-width: 1380px;
+        width: 100%;
+        margin: 0 auto;      
+}
+
+.round{
+    visibility: hidden;
+}
+
+span{
+    display: inline-block;
+    width: 70%;
+}
+
+.myland {
+    display: inline-block;
+    width: 98%;
+    padding: 0 8%;
+    
+}
+
+h1 {
+    
+    font-size: 65px;
+    font-family: 'Lato', sans-serif;
+    color: whitesmoke;
+    font-weight: 800;
+    padding: 2% 8%;  
+    text-transform: uppercase;
+    width: 95%;
+}
+
+h2 {
+    
+    font-size: 42px;
+    font-family: 'Lato', sans-serif;
+    color: whitesmoke;
+    font-weight: 800;
+    /*padding-left: 8%;*/
+    /*width: 100%;*/
+    text-transform: uppercase;
+}
+.links{
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+}
+
+nav {
+    background-color: darkgray;
+    color: whitesmoke;
+    padding: 5px 0px;
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+       
+  }
+  
+  nav ul {
+    list-style-type: none;
+    /* padding: 0; */
+
+  }
+  
+  nav ul li {
+   display: inline;
+    margin-right: 10px;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 300px;
+    padding: 5px;
+    /*border: none;*/
+    border-width: 0.5px;
+    border-radius: 5px;
+    background: transparent;
+  }
+  
+
+  .landing {
+    background-image: url('./aryan-unsplash.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    opacity: 0.9;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   /* height: 80vh;*/
+   height: auto;
+   height: 82vh;
+    
+    
+}
+
+    .action{
+        padding: 15px;
+        background-color: darkolivegreen;
+        color: mediumaquamarine;
+        text-decoration: none;
+        display: inline-block; 
+        margin: auto;
+        border-radius: 10%;
+        margin-left: 8%;
+        margin-top: 4%;
+    
+    }
+    button:hover {
+        background-color: rgb(58, 122, 141);
+        color: white;
+      }
+
+/* Style the Sticky icons on web page */   
+.stickyicon-list {   
+    position: fixed;   
+    top: 380px;   
+    transform: translateY(-50%);             
+    }         
+    .stickyicon-list a {   
+    display: block;   
+    text-align: center;   
+    padding: 8px;   
+    transition: all 0.5s ease;   
+    color: white;   
+    font-size: 25px;   
+    }      
+    
+    
+/* Three columns side by side */
+/*.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }*/
+  
+    
+  .column{
+    margin: auto;
+    /*background-color: aqua;*/
+    width: 33%;
+    height: 75vh;
+    padding: 13% 5%;
+    
+  }
+  .container {
+    padding: 0 8%;
+  }
+
+  .cards{
+    width: 90%;
+    
+    display: flex;
+    flex-direction: space-around;
+    margin: auto;
+    margin-left: 8%;
+    /*background-color: aquamarine;*/
+  }
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: whitesmoke;
+    background-color: rgb(21, 103, 75);
+    text-align: center;
+    cursor: pointer;
+    width: 115%; 
+    border-radius: 5px;
+  }
+  
+  img{
+    background-color: navy;
+    width: 100%;
+    border-radius: 5px;
+  }
+  .button:hover {
+    background-color: #555;
+  }
