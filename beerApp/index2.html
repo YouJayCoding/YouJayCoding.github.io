@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Punk API Beer App</title>
+    <link rel="stylesheet" href="index2.css" />
+  </head>
+  <body>
+    <header>Punk API Beer App</header>
+    <div class="container">
+      <div class="filters">
+        <div class="card filter-card">
+          <div class="filter-container container">
+            <div class="filter-text">
+              <p>Alcohol Vol (ABV):</p>
+            </div>
+            <div class="filter">
+              <form id="filterABV" class="filter-form">
+                <label for="abvAll">
+                  <input
+                    type="radio"
+                    name="filter-abv"
+                    class="filter-all"
+                    id="abvAll"
+                    value="all"
+                    checked
+                  />
+                  
+                  <span class="filter-all active">All</span>
+                </label>
+                <label for="abvWeak">
+                  <input
+                    type="radio"
+                    name="filter-abv"
+                    class="beer"
+                    id="abvWeak"
+                    value="weak"
+                  />
+                 
+
+                  <div class="icon">
+                  <span class="small">
+                    <i class="fas fa-beer fa-2x" style="color: rgb(241, 241, 19)"></i>   
+                </span>
+                </div>
+
+                </label>
+                <label for="abvMedium">
+                  <input
+                    type="radio"
+                    name="filter-abv"
+                    class="beer"
+                    id="abvMedium"
+                    value="medium"
+                  />
+                  <div class="icon">
+                  <span class="medium">
+                    <i class="fas fa-beer fa-2x" style="color:orange"> </i>   
+                  </span>
+                </div>
+                </label>
+                <label for="abvStrong">
+                  <input
+                    type="radio"
+                    name="filter-abv"
+                    class="beer"
+                    id="abvStrong"
+                    value="strong"
+                  />
+                  <div class="icon">
+                  <span class="strong">
+                    <i class="fas fa-beer fa-2x" style="color:orangered"></i>   
+                  </span>
+                </div>
+                </label>
+              </form>
+            </div>
+          </div>
+        </div>
+
+
+          <div class="card filter-card">
+          <div class="filter-container container">
+            <div class="filter-text">
+              <p>Hoppiness (IBU):</p>
+            </div>
+            <div class="filter">
+              <form id="filterIBU" class="filter-form">
+                <label for="ibuAll">
+                  <input
+                    type="radio"
+                    name="filter-ibu"
+                    class="filter-all"
+                    id="ibuAll"
+                    value="all"
+                    checked
+                  />
+                  <span class="filter-all">All</span>
+                </label>
+                <label for="ibuWeak">
+                  <input
+                    type="radio"
+                    name="filter-ibu"
+                    class="hops"
+                    id="ibuWeak"
+                    value="weak"
+                  />
+                  <div class="icon">
+                  <span class="small">
+                  <i class="fas fa-spa fa-2x" style="color:rgb(163, 214, 86)"></i>
+                  </span>
+                  </div>
+                </label>
+                <label for="ibuMedium">
+                  <input
+                    type="radio"
+                    name="filter-ibu"
+                    class="hops"
+                    id="ibuMedium"
+                    value="medium"
+                  />
+
+                  <div class="icon">
+                  <span class="medium">
+                    <i class="fas fa-spa fa-2x" style="color:rgb(64, 146, 64)"></i>
+                  </span>
+                  </div>
+                </label>
+
+                <label for="ibuStrong">
+                  <input
+                    type="radio"
+                    name="filter-ibu"
+                    class="hops"
+                    id="ibuStrong"
+                    value="strong"
+                  />
+                  <div class="icon">
+                  <span class="strong">
+                    <i class="fas fa-spa fa-2x" style="color: darkgreen"></i>
+                  </span>
+                  </div>
+                </label>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="card filter-card">
+          <div class="filter-container">
+            <div class="filter-text">
+              <p>Page: <span id="pageNumber"></span></p>
+            </div>
+            <div class="filter">
+              <button id="prevPage" class="page-btn" disabled>
+                <i class="far fa-caret-square-left"></i>
+              </button>
+              <button id="nextPage" class="page-btn">
+                <i class="far fa-caret-square-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="beers"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+    <script src="index2.js"></script>
+  </body>
+</html>
